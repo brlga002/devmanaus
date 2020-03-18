@@ -595,7 +595,8 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+                    <form action="{{ route('home.sendEmail') }}" method="post" class="php-email-form">
+                        @csrf
                         <div class="form-row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Pelo menos 4 caracteres" />
@@ -613,11 +614,6 @@
                         <div class="form-group">
                             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escreva algo para nós" placeholder="mensagem"></textarea>
                             <div class="validate"></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="loading">Carregando</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
                         </div>
                         <div class="text-center"><button type="submit">Enviar mensagem</button></div>
                     </form>
@@ -646,7 +642,8 @@
 
             <div class="row footer-newsletter justify-content-center">
                 <div class="col-lg-6">
-                    <form action="" method="post">
+                    <form action="{{ route('home.subscribe') }}" method="post">
+                        @csrf
                         <input type="email" name="email" placeholder="Digite seu e-mail"><input type="submit" value="Se inscrever">
                     </form>
                 </div>
@@ -681,7 +678,7 @@
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+<!--script src="assets/vendor/php-email-form/validate.js"></script-->
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/venobox/venobox.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
