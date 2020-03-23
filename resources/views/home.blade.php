@@ -69,7 +69,7 @@
                             <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                 <i class="bx bx-cube-alt"></i>
                                 <h4><a href="#">Desenvolvimento</a></h4>
-                                <p>Desenvolvemos a solução que voçê prescisa, moldando as soluções personalizadas</p>
+                                <p>Desenvolvemos a solução que você prescisa, moldando as soluções personalizadas</p>
                             </div>
                             <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                                 <i class="bx bx-images"></i>
